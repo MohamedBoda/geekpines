@@ -1,0 +1,50 @@
+@import "abstracts/_variable",
+        "abstracts/_functions",
+        "abstracts/mixin";
+	
+@import "base/normalize",
+        "base/slick",
+        "base/slick-theme",
+        "base/sliader_components",
+        "base/animation";
+
+@import "components/body.scss",
+        "components/header.scss",
+        "components/company",
+        "components/team",
+        "components/service.scss",
+        "components/how_work.scss",
+        "components/our_work.scss",
+        "components/contact.scss",
+        "components/footer.scss"; 
+  
+
+ 
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+// @include fontface(GoogleSans, Regular);
+// @include fontface(GoogleSans, Bold);
+// @include fontface(GoogleSans, Italic);
+// @include fontface(GoogleSans, Medium);

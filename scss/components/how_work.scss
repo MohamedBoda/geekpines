@@ -1,0 +1,76 @@
+.how_work {
+    width: 100vw;
+    height: 671px;
+    .background{
+        background-image: url(/assets/images/how_work_backfround.jpg);
+        @include background_image();
+        .container{
+            @include container(); 
+            @include flex-column();
+            justify-content: flex-start;
+            align-items: center;
+            @include tittle_of_block (72px , 5 ,7); 
+            @media screen and (max-width:990px){
+                @include tittle_of_block (60px,5,7);
+            }  
+            .plans{
+                width: 100%;
+                height: 307px;
+                margin-top: 65px; 
+                @include flex-row();
+                justify-content: space-between !important;
+                .plan{
+                    width: 252px !important;
+                    height: 307px;
+                    margin: 0  auto!important;
+                    @include flex-column();
+                    justify-content: flex-start ;
+                    align-items: center;
+                    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+                    border-radius: 3px;
+                    @include text_center();
+                    h4{
+                        @include font__x3() ; 
+                        @include color( blue_style , 5) ;
+                        padding: 0;
+                        margin: 0;
+                        margin-top: 35px;  
+                    }
+                    h5{
+                        @include font__x1() ; 
+                        @include color( blue_style , 2) ; 
+                        padding: 0;
+                        margin: 0;
+                        margin-top: 4px;
+                    }
+                    & img{
+                        margin-top: 50px
+                    }
+                     &:hover{
+                         cursor: pointer;
+                     }
+                }
+                .slick-prev,
+                .slick-next {
+                    &.slick-disabled:before {
+                    }
+                    &:before {
+                        color: white;
+                    }
+                }
+                .slick-dots {
+                    li {
+                        button {
+                            border: 1px solid white;
+                            background:  transparent;
+                        }
+                        &.slick-active button:before {
+                          background: white;
+                      
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

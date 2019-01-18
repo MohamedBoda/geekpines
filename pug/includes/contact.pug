@@ -1,0 +1,34 @@
+div.contact#contact 
+    div.container 
+        div.tittle 
+            div.tittle_tittle.geekpines.slideInDown(data-wow-duration='4s') 
+                p Свяжитесь с нами
+            div.tittle_line.geekpines.fadeIn(data-wow-duration='3s') 
+            div.tittle_details.geekpines.slideInDown(data-wow-duration='1s')
+                p 
+                    span.small  Делаем очень хорошо и классно, можете 
+                    span.small
+                      | поверить наслово,
+                      span.big
+                        | а еще скачать наши
+                        span.small бесплатные приложения    
+        div.form
+            form.form_contact(action='#')
+                    div.form_contact_group
+                        input#name(type='text', name='name')
+                        label.label_form(for='name') Ваше имя
+                    div.form_contact_group
+                        input#number(type='text', name='number')
+                        label.label_form(for='number') Ваш телефон
+                    div.form_contact_group
+                        input#email(type='text', name='email')
+                        label.label_form(for='email') E-mail
+                    div.form_contact_group#comment
+                        textarea.text_area
+                        label.label_form Комментарий  
+                    div.button 
+                        span Отправить  
+            div.form_photo
+                //-  img(src='/assets/images/contact_photo.png')
+ 
+

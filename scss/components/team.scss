@@ -1,0 +1,141 @@
+.team{
+    width: 100vw;
+    height: 603px; 
+    @include background(blue_style,1);
+    .background{
+        background-image: url(/assets/images/team.png);
+        @include background_image();
+        @media screen and (max-width: 800px){
+			background-image: none; 
+		}
+        .container{
+            @include container(); 
+            @include flex-column();
+            justify-content: flex-start;
+            align-items: center;
+            @include tittle_of_block (72px , 5 ,7); 
+            @media screen and (max-width:990px){
+            @include tittle_of_block (60px,5,7);  
+            } 
+            .persones{
+                width:100%;
+                height: 220px;
+                @include flex-row();
+                justify-content: space-between !important;
+                align-items: flex-end;
+                margin-top: 35px;
+                .person{
+                    width: 140px;
+                    height: 200px;
+                    @include flex-column();
+                    align-items: center;
+                    justify-content: center;
+                 .avtar_1,
+                 .avtar_2,
+                 .avtar_3,
+                 .avtar_4,
+                 .avtar_5,
+                 .avtar_6,
+                 .avtar_7,
+                 .avtar_8,
+                 .avtar_9{
+                        width:86px;
+                        height:86px;
+                        @include flex-row();
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        & img{
+                            width:66px;
+                            height:66px;
+                            padding: 2px;
+                            border-radius: 50%;
+                        }
+                        &::before{
+                            content: url();
+                            position: absolute;
+                            top:0px;
+                            left: 0px; 
+                            width:86px;
+                            height:86px;
+                            background-image: url(/assets/images/person_border.png);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            animation: spin 2s linear infinite;
+                            filter: hue-rotate(90deg)
+                        }
+                        @keyframes spin {
+                            0% { transform: rotate(0deg);
+                                filter: hue-rotate(0deg) }
+                          100% { transform: rotate(360deg);
+                            filter: hue-rotate(360deg) }
+                        }
+                    }
+                    .avtar_2{
+                        &::before{
+                            animation-delay: 1s
+                        }
+                    }
+                    .avtar_3{
+                        &::before{
+                            animation-delay: 1.5s
+                        }
+                    }
+                    .avtar_4{
+                        &::before{
+                            animation-delay: 2s
+                        }
+                    }
+                    .avtar_5{
+                        &::before{
+                            animation-delay: 2.5s
+                        }
+                    }
+                    .avtar_6{
+                        &::before{
+                            animation-delay: 3s
+                        }
+                    }
+                    .avtar_7{
+                        &::before{
+                            animation-delay: 3.5s
+                        }
+                    }
+                    .avtar_8{
+                        &::before{
+                            animation-delay: 4s
+                        }
+                    }
+                    .avtar_9{
+                        &::before{
+                            animation-delay: 4.5s
+                        }
+                    }
+                    &_job{
+                        & h3,h5{
+                            margin: 0; 
+                            padding: 0;
+                            @include text-center()
+                        }
+                        & h3{
+                            @include font__x2();
+                            line-height: normal;
+                            font-size: 12px;
+                            @include color (blue_style ,5);
+                        }
+                        & h5{
+                            @include font__x1();
+                            @include color (blue_style ,2);
+                            line-height: 15px;
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+            .button{
+                @include button_style_color();
+                margin-top: 42px;
+            }
+        }
+    }
+}

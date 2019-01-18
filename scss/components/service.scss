@@ -1,0 +1,54 @@
+.service_company{
+    width: 100vw;
+    height: 691px;
+    .background{
+        background-image: url(/assets/images/service_background.png);
+        @include background_image();
+        .container{
+            @include container();  
+            @include flex-column();
+            justify-content: flex-start;
+            align-items: center;
+            @include tittle_of_block (72px ,1 ,2);
+            @media screen and (max-width:990px){
+                @include tittle_of_block (60px,1,2);
+            }
+            .services{
+                width: 100%;
+                height: 250px;
+                margin-top: 52px; 
+                @include flex-row();
+                justify-content: space-around;
+                .service {
+                    @include flex-column();
+                    justify-content: flex-start;
+                    align-items: center;
+                    @include text-center();
+                    &:hover{
+                        cursor: pointer;
+                    }
+                    h4,h5{
+                        margin: 0;
+                        padding: 0;
+                    }
+                    h4{
+                        @include font__x3() ; 
+                        @include color( blue_style , 1) ;
+                        line-height: normal;
+                        font-weight: bold;
+                        margin-top: 22px; 
+                    }
+                    h5{
+                        @include font__x1() ; 
+                        @include color( blue_style , 2) ; 
+                        margin-top: 10px;  
+                    }
+                }
+            }
+            .button{
+                @include button_style_white();
+                margin-top: 44px;
+            } 
+        }
+    }
+}

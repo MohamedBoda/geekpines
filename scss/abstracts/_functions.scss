@@ -1,0 +1,20 @@
+// color function 
+// color(blue_style , 1)
+@function get-color($elem, $variant) {
+	@return map-get(map-get($color, $elem), $variant);
+}
+//  chang font function
+@function get-font-family($elem , $variant){
+	@return map-get(map-get($font__family , $elem) , $variant );
+}
+
+//  change font size 
+@function get-font-size( $elem ,$variant) {
+	@return map-get(map-get($font__sizes , $elem) , $variant);
+}
+
+
+@function get-line-height($elem) { 
+	@return map-get($line__height, $elem);
+}
+  
