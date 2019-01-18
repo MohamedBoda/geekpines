@@ -2,7 +2,7 @@
     width: 100vw;
     height: 671px;
     .background{
-        background-image: url(/assets/images/how_work_backfround.jpg);
+        background-image: url(../assets/images/how_work_backfround.jpg);
         @include background_image();
         .container{
             @include container(); 

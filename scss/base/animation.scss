@@ -1,4 +1,65 @@
 @charset "UTF-8";
+@keyframes header_phone{
+  0%,
+  100% {
+    -webkit-transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(0);
+    -webkit-transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateY(-30px) ;
+    transform: translateY(-30px) ;
+  }
+  30% {
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+  }
+  45% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  60% {
+    -webkit-transform: translateY(9px);
+    transform: translateY(9px);
+  }
+  75% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes scroll_button {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb04 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  20% {
+    -webkit-transform: translate(0, 5px);
+    transform: translate(0, 5px);
+  }
+  40% {
+    -webkit-transform:  translate(0, 0);
+    transform:  translate(0, 0);
+  }
+}
 @-webkit-keyframes bounce {
   from,
   20%,

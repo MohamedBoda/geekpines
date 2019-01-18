@@ -15,7 +15,7 @@
         .logo{
             width: 185px;
             height:34px;
-            background-image: url(/assets/images/logo_small.svg);
+            background-image: url(../assets/images/logo_small.svg);
             background-repeat: no-repeat;  
             background-size: contain;
         }
@@ -40,7 +40,7 @@
                     transition: all 1s ;
                         &::before{
                             transition: opacity 0.5s linear ;
-                            content:url(/assets/images/before_items.png);
+                            content:url(../assets/images/before_items.png);
                             display: block;
                             position: absolute;
                             left: -35px;
@@ -67,7 +67,7 @@
     width: 100vw;
     height: 853px;
     border-top:1px solid #201E26;
-    background-image: url(/assets/images/background_header.png); 
+    background-image: url(../assets/images/background_header.png); 
     background-repeat: no-repeat;
     background-size: cover;
     &_container{
@@ -129,6 +129,8 @@
                 & img{
                     max-width: 117%;
                     margin-top: 40px;
+                    -webkit-animation: header_phone 12s 4s infinite both;
+                        animation: header_phone 12s 4s infinite both;
                     @media screen and (max-width:1112px) and  (min-width:931px){
                         max-width: 100%;
                         margin-left:90px;
@@ -140,6 +142,16 @@
             height: 35px;
             @include flex-row();
             justify-content: center;
+            svg path:nth-last-child(1){  
+                -webkit-animation: scroll_button 2s infinite both;
+                animation: scroll_button 2s infinite both;
+            }
+            &:hover{
+                svg:hover{  
+                    cursor: pointer;
+                    -webkit-animation: sdb04 2s infinite both;
+                    animation: sdb04 2s infinite both; 
+                }    }
         }
     }
 }
@@ -173,7 +185,7 @@
             width: 100vw;
             height: fit-content;
             border-top:1px solid #201E26;
-            background-image: url(/assets/images/background_header_phone.png); 
+            background-image: url(../assets/images/background_header_phone.png); 
             background-repeat: no-repeat;
             background-size: 100% 100%;
             &_container{

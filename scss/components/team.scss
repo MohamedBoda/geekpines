@@ -1,13 +1,13 @@
 .team{
     width: 100vw;
     height: 603px; 
+    @media screen and (max-width:450px){
+       height: fit-content;
+    }
     @include background(blue_style,1);
     .background{
-        background-image: url(/assets/images/team.png);
+        background-image: url(../assets/images/team.png);
         @include background_image();
-        @media screen and (max-width: 800px){
-			background-image: none; 
-		}
         .container{
             @include container(); 
             @include flex-column();
@@ -58,7 +58,7 @@
                             left: 0px; 
                             width:86px;
                             height:86px;
-                            background-image: url(/assets/images/person_border.png);
+                            background-image: url(../assets/images/person_border.png);
                             background-repeat: no-repeat;
                             background-size: contain;
                             animation: spin 2s linear infinite;
@@ -135,6 +135,9 @@
             .button{
                 @include button_style_color();
                 margin-top: 42px;
+                @media screen and (max-width:450px){
+                    margin-top:50;
+                }
             }
         }
     }

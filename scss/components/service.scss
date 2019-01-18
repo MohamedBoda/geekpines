@@ -2,7 +2,7 @@
     width: 100vw;
     height: 691px;
     .background{
-        background-image: url(/assets/images/service_background.png);
+        background-image: url(../assets/images/service_background.png);
         @include background_image();
         .container{
             @include container();  

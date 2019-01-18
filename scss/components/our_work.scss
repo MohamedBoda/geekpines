@@ -2,7 +2,7 @@
     width: 100vw;
     height: 905px;
     .background{
-        background-image: url(/assets/images/our_work_background.png);
+        background-image: url(../assets/images/our_work_background.png);
         @include background_image();
         .container{
             @include container(); 
@@ -12,7 +12,6 @@
             @include tittle_of_block (72px , 1 ,2);
             @media screen and (max-width:990px){
                 @include tittle_of_block (60px,1,2);
-                
                 .slider_4{
                     display:none!important;
                 }
@@ -31,10 +30,13 @@
                 }
                 .work{
                     width:349px !important;
+                    @media screen  and (max-width:360){
+                        width:300px !important;
+                    }
                     height: 405px;
                     @include flex-column();
                     background: white;
-                    text-align: left;
+                    text-align: left; 
                     border:1px solid #E2E6E9;
                     padding: auto;
                     transition: box-shadow 0.4s ;
@@ -63,7 +65,6 @@
                             margin-top:8px; 
                         }
                     }
-
                     &_button{
                         height: 52px;
                         padding: 0 15px 0 15px; 
@@ -71,6 +72,7 @@
                         justify-content: space-around;
                         align-items: center;
                         border-top: 1px solid #E2E6E9;
+        
                         span{
                             color: #9D6EFF;
                         }
@@ -79,9 +81,7 @@
                         cursor: pointer;
                         box-shadow: 0px 0px 40px rgba(202, 211, 217, 0.72);
                     }
-
                 }
-               
             }
             @media screen and (min-width:1114px){                
                 .slider_4{
