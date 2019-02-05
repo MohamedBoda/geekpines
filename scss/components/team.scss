@@ -29,7 +29,7 @@
                     height: 200px;
                     @include flex-column();
                     align-items: center;
-                    justify-content: center;
+                    justify-content: center;                  
                  .avtar_1,
                  .avtar_2,
                  .avtar_3,
@@ -41,6 +41,10 @@
                  .avtar_9{
                         width:86px;
                         height:86px;
+                        @media screen and (max-width:450px){
+                        width:60px; 
+                        height:60px; 
+                        }
                         @include flex-row();
                         justify-content: center;
                         align-items: center;
@@ -48,67 +52,30 @@
                         & img{
                             width:66px;
                             height:66px;
+                            @media screen and (max-width:450px){
+                                width:50px; 
+                                height:50px;
+                                }
                             padding: 2px;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -khtml-border-radius: 50%;
                             border-radius: 50%;
                         }
                         &::before{
-                            content: url();
-                            position: absolute;
+                            content:'';
+                            position: absolute; 
                             top:0px;
                             left: 0px; 
                             width:86px;
                             height:86px;
+                            @media screen and (max-width:450px){
+                                width:60px; 
+                                height:60px;
+                            }
                             background-image: url(../assets/images/person_border.png);
                             background-repeat: no-repeat;
-                            background-size: contain;
-                            animation: spin 2s linear infinite;
-                            filter: hue-rotate(90deg)
-                        }
-                        @keyframes spin {
-                            0% { transform: rotate(0deg);
-                                filter: hue-rotate(0deg) }
-                          100% { transform: rotate(360deg);
-                            filter: hue-rotate(360deg) }
-                        }
-                    }
-                    .avtar_2{
-                        &::before{
-                            animation-delay: 1s
-                        }
-                    }
-                    .avtar_3{
-                        &::before{
-                            animation-delay: 1.5s
-                        }
-                    }
-                    .avtar_4{
-                        &::before{
-                            animation-delay: 2s
-                        }
-                    }
-                    .avtar_5{
-                        &::before{
-                            animation-delay: 2.5s
-                        }
-                    }
-                    .avtar_6{
-                        &::before{
-                            animation-delay: 3s
-                        }
-                    }
-                    .avtar_7{
-                        &::before{
-                            animation-delay: 3.5s
-                        }
-                    }
-                    .avtar_8{
-                        &::before{
-                            animation-delay: 4s
-                        }
-                    }
-                    .avtar_9{
-                        &::before{
-                            animation-delay: 4.5s
+                            background-size: contain;                         
                         }
                     }
                     &_job{
@@ -122,12 +89,18 @@
                             line-height: normal;
                             font-size: 12px;
                             @include color (blue_style ,5);
+                            @media screen and (max-width:450px){
+                               font-size:7px
+                            }
                         }
                         & h5{
                             @include font__x1();
                             @include color (blue_style ,2);
                             line-height: 15px;
                             font-size: 10px;
+                            @media screen and (max-width:450px){
+                                font-size:5px
+                             }
                         }
                     }
                 }

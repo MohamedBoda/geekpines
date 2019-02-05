@@ -1,34 +1,35 @@
 div.contact#contact 
     div.container 
         div.tittle 
-            div.tittle_tittle.geekpines.slideInDown(data-wow-duration='4s') 
-                p Свяжитесь с нами
-            div.tittle_line.geekpines.fadeIn(data-wow-duration='3s') 
-            div.tittle_details.geekpines.slideInDown(data-wow-duration='1s')
+            div.tittle_tittle
+                p Contact With Us
+            div.tittle_line
+            div.tittle_details
                 p 
-                    span.small  Делаем очень хорошо и классно, можете 
+                    span.small keep in touch with us 
                     span.small
-                      | поверить наслово,
+                      | and ask any question we will be happy to replay 
                       span.big
-                        | а еще скачать наши
-                        span.small бесплатные приложения    
+                        | 
+                        span.small   
         div.form
             form.form_contact(action='#')
                     div.form_contact_group
                         input#name(type='text', name='name')
-                        label.label_form(for='name') Ваше имя
+                        label.label_form(for='name') Name
                     div.form_contact_group
                         input#number(type='text', name='number')
-                        label.label_form(for='number') Ваш телефон
+                        label.label_form(for='number') Phone
                     div.form_contact_group
                         input#email(type='text', name='email')
                         label.label_form(for='email') E-mail
                     div.form_contact_group#comment
                         textarea.text_area
-                        label.label_form Комментарий  
+                        label.label_form Comment 
                     div.button 
-                        span Отправить  
+                        span 
+                            a(href='#') Send 
             div.form_photo
-                //-  img(src='/assets/images/contact_photo.png')
+                
  
 

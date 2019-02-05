@@ -1,45 +1,50 @@
-section.header 
+section.header#header
     div.nav 
-        div.logo
-        div.menu 
-            div.menu_icon
-                svg(width='32', height='16', viewBox='0 0 32 16', fill='none', xmlns='http://www.w3.org/2000/svg')
-                    path(d='M0.999979 1.99996H31.0001C31.5521 1.99996 32.0001 1.55192 32.0001 0.999979C32.0001 0.447955 31.552 0 31.0001 0H0.999979C0.447954 0 0 0.448038 0 0.999979C0 1.55192 0.448037 1.99996 0.999979 1.99996Z', fill='white')
-                    path(d='M31.0001 7H0.999979C0.447954 7 0 7.44803 0 7.99997C0 8.55191 0.448037 8.99995 0.999979 8.99995H31.0001C31.5521 8.99995 32.0001 8.55191 32.0001 7.99997C32.0001 7.44803 31.5521 7 31.0001 7Z', fill='white')
-                    path(d='M31.0001 14H11C10.448 14 10 14.448 10 15C10 15.552 10.448 16 11 16H31.0001C31.5521 16 32 15.5519 32 15C32.0001 14.448 31.5521 14 31.0001 14Z', fill='white')
-            div.menu_items 
-                ul 
-                    li 
-                        a Главная
-                    li
-                        a(href='#company') О нас
-                    li  
-                        a(href='#our_work') Продукция
-                    li  
-                        a(href='#contact') Связь с нами
+        div.container
+            div.logo
+            div.menu 
+                div.menu_icon
+                    svg(width='32', height='16', viewBox='0 0 32 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+                        path(d='M0.999979 1.99996H31.0001C31.5521 1.99996 32.0001 1.55192 32.0001 0.999979C32.0001 0.447955 31.552 0 31.0001 0H0.999979C0.447954 0 0 0.448038 0 0.999979C0 1.55192 0.448037 1.99996 0.999979 1.99996Z', fill='white')
+                        path(d='M31.0001 7H0.999979C0.447954 7 0 7.44803 0 7.99997C0 8.55191 0.448037 8.99995 0.999979 8.99995H31.0001C31.5521 8.99995 32.0001 8.55191 32.0001 7.99997C32.0001 7.44803 31.5521 7 31.0001 7Z', fill='white')
+                        path(d='M31.0001 14H11C10.448 14 10 14.448 10 15C10 15.552 10.448 16 11 16H31.0001C31.5521 16 32 15.5519 32 15C32.0001 14.448 31.5521 14 31.0001 14Z', fill='white')
+                div.menu_items 
+                    ul 
+                        li 
+                            a(href='#header') Home
+                        li
+                            a(href='#company') About
+                        li  
+                            a(href='#services') Services
+                        li  
+                            a(href='#strategy') Strategy
+                        li  
+                            a(href='#our_work') portfolio
+                        li  
+                            a(href='#contact') Contact
     div.desc
         div.desc_container  
             div.info  
                 div.text
                     div.text_tittle
                         p
-                            | Создаем blockchain продукты
+                            | Ultimate Digital Experiences.
                             br
-                            | и что-то еще делаем
+                            |  Over Than 8 years in IT.
                     div.text_line 
                     div.text_details
                         p
-                          span.small  Делаем очень хорошо и классно, можете 
+                          span.small  Our main aim to acquire, retain and delight 
                           span.small
-                            | поверить наслово,
+                            | our clients
                             span.big
-                              | а еще скачать наши
-                              span.small бесплатные приложения    
+                              |  We solve any problem and 
+                              span.small deliver results.   
  
                     div.text_button
-                        span Узнайте больше 
+                        span 
+                            a(href='#company')  Know More 
                 div.photo
-                   
                     img(src='./assets/images/1111.png', class='photo_small')   
             div.scroll
                 a(href='#company')    

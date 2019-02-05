@@ -91,7 +91,7 @@ $slick-dot-size: 6px !default;
     @media screen and (min-width:50px){
         
     }
-    z-index: 9999;
+    z-index: 100;
     left: 4px;
     [dir="rtl"] & {
         left: auto;
