@@ -174,47 +174,77 @@ $(document).ready(function() {
         $('.persones').slick('slickGoTo', slideno)
     })
 });
-var modal = document.querySelector(".pop-up");
+
+var modal_1 = document.getElementById("pop-up-1");
+var modal_2 = document.getElementById("pop-up-2");
+var modal_3 = document.getElementById("pop-up-3");
+var modal_4 = document.getElementById("pop-up-4");
+var modal_5 = document.getElementById("pop-up-5");
+var modal_6 = document.getElementById("pop-up-6");
+
 var trigger_1 = document.getElementById("trigger-1");
 var trigger_2= document.getElementById("trigger-2");
 var trigger_3= document.getElementById("trigger-3");
 var trigger_4= document.getElementById("trigger-4");
 var trigger_5= document.getElementById("trigger-5");
 var trigger_6= document.getElementById("trigger-6");
-var trigger_7= document.getElementById("trigger-7");
-var trigger_8= document.getElementById("trigger-8");
-var trigger_9= document.getElementById("trigger-9");
-var trigger_10= document.getElementById("trigger-10");
-var trigger_11= document.getElementById("trigger-11");
-var trigger_12= document.getElementById("trigger-12");
+// var trigger_7= document.getElementById("trigger-7");
+// var trigger_8= document.getElementById("trigger-8");
+// var trigger_9= document.getElementById("trigger-9");
+// var trigger_10= document.getElementById("trigger-10");
+// var trigger_11= document.getElementById("trigger-11");
+// var trigger_12= document.getElementById("trigger-12");
 
 
-var closeButton = document.querySelector(".close");
 var header = document.getElementById("header");
-    function toggleModal() { 
-        modal.classList.toggle("show-pop-up");
+    function toggleModal1() {
+        modal_1.classList.toggle("show-pop-up");
+    }
+    function toggleModal2() {
+        modal_2.classList.toggle("show-pop-up");
+    }
+    function toggleModal3() {
+        modal_3.classList.toggle("show-pop-up");
+    }
+    function toggleModal4() {
+        modal_4.classList.toggle("show-pop-up");
+    }
+    function toggleModal5() {
+        modal_5.classList.toggle("show-pop-up");
+    }
+    function toggleModal6() {
+        modal_6.classList.toggle("show-pop-up");
     }
     function close() {
-        modal.classList.remove("show-pop-up");
+        modal_1.classList.remove("show-pop-up");
+        modal_2.classList.remove("show-pop-up");
+        modal_3.classList.remove("show-pop-up");
+        modal_4.classList.remove("show-pop-up");
+        modal_5.classList.remove("show-pop-up");
+        modal_6.classList.remove("show-pop-up");
     }
     function windowOnClick(event) {
         if (event.target === modal) { 
             toggleModal();
         }
     }
-    trigger_1.addEventListener("click", toggleModal);
-    trigger_2.addEventListener("click", toggleModal);
-    trigger_3.addEventListener("click", toggleModal);
-    trigger_4.addEventListener("click", toggleModal);
-    trigger_5.addEventListener("click", toggleModal);
-    trigger_6.addEventListener("click", toggleModal);
-    trigger_7.addEventListener("click", toggleModal);
-    trigger_8.addEventListener("click", toggleModal);
-    trigger_9.addEventListener("click", toggleModal);
-    trigger_10.addEventListener("click", toggleModal);
-    trigger_11.addEventListener("click", toggleModal);
-    trigger_12.addEventListener("click", toggleModal);
-    closeButton.addEventListener("click", toggleModal);
-    window.addEventListener("click", windowOnClick); 
-    header.addEventListener("click", close); 
-  
+    trigger_1.addEventListener("click", toggleModal1);
+    trigger_2.addEventListener("click", toggleModal2);
+    trigger_3.addEventListener("click", toggleModal3);
+    trigger_4.addEventListener("click", toggleModal4);
+    trigger_5.addEventListener("click", toggleModal5);
+    trigger_6.addEventListener("click", toggleModal6);
+    // trigger_7.addEventListener("click", toggleModal);
+    // trigger_8.addEventListener("click", toggleModal);
+    // trigger_9.addEventListener("click", toggleModal);
+    // trigger_10.addEventListener("click", toggleModal);
+    // trigger_11.addEventListener("click", toggleModal);
+    // trigger_12.addEventListener("click", toggleModal);
+    var closeButtons = document.querySelectorAll(".close");
+
+    closeButtons.forEach(function(x){
+        x.addEventListener("click", close);
+    })
+    
+    // window.addEventListener("click", windowOnClick);
+    header.addEventListener("click", close);

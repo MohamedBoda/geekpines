@@ -108,7 +108,7 @@
             @include flex-row();
             justify-content: space-between;
             .text{
-                max-width: 539px;
+                width: fit-content;
                 &_tittle{
                     @include font__x4();
                     margin-top:255px;
@@ -149,7 +149,7 @@
                 }
             }
             .photo{
-                max-width: 573px;
+                max-width: 500px;
                 & img{
                     max-width: 117%;
                     margin-top: 40px;
