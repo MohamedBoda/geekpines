@@ -9,13 +9,13 @@
         @include container(); 
         @include flex-column();
         justify-content: flex-start;
-        @include tittle_of_block (70px,5,7);
-        .tittle{
+        @include title_of_block (70px,5,7);
+        .title{
             height: 177px;
         }
 
         @media screen and (max-width:990px){
-            @include tittle_of_block (60px,5,7);
+            @include title_of_block (60px,5,7);
         }
         .form{
             width: 100%;

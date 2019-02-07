@@ -109,7 +109,7 @@
             justify-content: space-between;
             .text{
                 width: fit-content;
-                &_tittle{
+                &_title{
                     @include font__x4();
                     margin-top:255px;
                     @media screen and (max-width:1112px) and  (min-width:931px){
@@ -136,7 +136,7 @@
                         line-height: 24px;
                     }
                     @media screen and (max-width:984px) and  (min-width:930px){
-                        font-size: 10px;
+                        font-size: 12px;
                         line-height: 20px;
                     }
                     .big{
@@ -151,7 +151,6 @@
             .photo{
                 max-width: 500px;
                 & img{
-                    max-width: 117%;
                     margin-top: 40px;
                     -webkit-animation: header_phone 12s 4s infinite both;
                         animation: header_phone 12s 4s infinite both;
@@ -229,7 +228,7 @@
                         @include flex-column();
                         align-items: center;
                         justify-content: flex-start;
-                        &_tittle{
+                        &_title{
                             margin-top:20px;
                             line-height: 34px;
                             font-size: 24px;
@@ -339,7 +338,7 @@
                         order: 2;
                         height: 100%;
                         width: 100%;
-                        &_tittle{
+                        &_title{
                             margin-top:20px;
                             line-height: 34px;
                             font-size: 24px;

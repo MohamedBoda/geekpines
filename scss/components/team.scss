@@ -13,9 +13,9 @@
             @include flex-column();
             justify-content: flex-start;
             align-items: center;
-            @include tittle_of_block (72px , 5 ,7); 
+            @include title_of_block (72px , 5 ,7); 
             @media screen and (max-width:990px){
-            @include tittle_of_block (60px,5,7);  
+            @include title_of_block (60px,5,7);  
             } 
             .persones{
                 width:100%;
@@ -97,7 +97,7 @@
                             @include font__x1();
                             @include color (blue_style ,2);
                             line-height: 15px;
-                            font-size: 10px;
+                            font-size: 12px;
                             @media screen and (max-width:450px){
                                 font-size:5px
                              }

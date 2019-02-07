@@ -9,55 +9,63 @@
             @include flex-column();
             justify-content: flex-start;
             align-items: center;
-            @include tittle_of_block (72px ,1 ,2);
+            @include title_of_block (72px ,1 ,2);
             @media screen and (max-width:990px){
-                @include tittle_of_block (60px,1,2);
+                @include title_of_block (60px,1,2);
             }
-            .services{
-                width: 100%;
-                margin-top: 52px; 
-                @include flex-row();         
-                justify-content: space-between;
-                margin-left: -15px;
-                margin-right: -15px;
+            // .services{
+            //     width: 100%;
+            //     margin-top: 52px; 
+            //     @include flex-row();         
+            //     justify-content: space-between;
+            //     margin-left: -15px;
+            //     margin-right: -15px;
 
-                .service {
-                    @include flex-column();
-                    width: 20%;
-                    padding: 0 15px;
-                    &:hover{
-                        cursor: pointer;
-                    }
-                    img{
-                        width: 100px;
-                       align-self: center;
+            //     .service {
+                    // @include flex-column();
+                    // width: 20%;
+                    // padding: 0 15px;
+                    // &:hover{
+                    //     cursor: pointer;
+                    // }
+                    // img{
+                    //     width: 100px;
+                    //    align-self: center;
                         
-                    }
-                    h4,h5{
-                        margin: 0;
-                        padding: 0;
-                    }
-                    h4{
-                        @include font__x3() ; 
-                        @include color( blue_style , 1) ;
-                        line-height: normal;
-                        font-weight: bold;
-                        margin-top: 22px; 
-                        align-self: center;
-                    }
-                    h5{
-                        @include font__x1() ; 
-                        @include color( blue_style , 2) ; 
-                        margin-top: 10px;  
-                        // text-align: justify;
-                    }
-                }
-            }
+                    // }
+                    // h4,h5{
+                    //     margin: 0;
+                    //     padding: 0;
+                    // }
+                    // h4{
+                    //     @include font__x3() ; 
+                    //     @include color( blue_style , 1) ;
+                    //     line-height: normal;
+                    //     font-weight: bold;
+                    //     margin-top: 22px; 
+                    //     align-self: center;
+                    // }
+                    // h5{
+                    //     @include font__x1() ; 
+                    //     @include color( blue_style , 2) ; 
+                    //     margin-top: 10px;  
+                    //     // text-align: justify;
+                    // }
+                // }
+            // }
             .button{
                 @include button_style_white();
                 margin-top: 44px;
                 margin-bottom: 95px;
             } 
         }
+    }
+
+    .h5 {
+        font-weight: 600;
+    }
+
+    img {
+        width: 100%;
     }
 }

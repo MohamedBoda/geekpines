@@ -10,147 +10,62 @@
             @include flex-column();
             justify-content: flex-start;
             align-items: center;
-            @include tittle_of_block (72px , 1 ,2);
+            @include title_of_block (72px , 1 ,2);
             
-            .works{
-                width: 100%;
-                height: 405px;
-                margin-top: 80px;
-                @media screen and (max-width:990px){
-                    margin-top: 45px;
-                } 
-                @include flex-row();
-                justify-content: space-between !important; 
-                .slick-dots {
-                    bottom: -65px;
-                }
-                .work{
-                    width:349px !important;
-                    height: 405px;
-                    @include flex-column();
-                    background: white;
-                    text-align: left; 
-                    border:1px solid #E2E6E9;
-                    padding: auto;
-                    transition: box-shadow 0.4s ;
-                    &_info{
-                        @include flex-column();
-                        justify-content: flex-start;
-                        width: 288px;
-                        height: 353px;
-                        margin: 32px auto 0 auto;
-                        & img{
-                            height: 156px;
-                        }
-                        & h4,p{
-                            margin: 0;
-                            padding: 0;
-                        }
-                        & h4{
-                            @include font__x3() ; 
-                            @include color( blue_style , 1) ;
-                            margin-top: 20px;
-                        }
-                        & p{
-                            @include font__x2() ;  
-                            @include color( blue_style , 2) ; 
-                            font-weight: normal;
-                            margin-top:8px; 
-                        }
-                    }
-                    &_button{
-                        height: 52px;
-                        padding: 0 15px 0 15px; 
-                        @include flex-row();
-                        justify-content: space-around;
-                        align-items: center;
-                        border-top: 1px solid #E2E6E9;
-                        span{
-                            color: #9D6EFF;
-                        }
-                    }
-                    &:hover{
-                        cursor: pointer;
-                        box-shadow: 0px 0px 40px rgba(202, 211, 217, 0.72);
-                    }
-                }
+            .slick-dots {
+                bottom: -65px;
             }
-            @media screen and (max-width:1113px){   
-                .slider_4{
-                    display: block!important;
-                    .work{
-                       margin: 0 auto !important;
-                       opacity: 1 !important;
-                       @media screen and (max-width:390px){ 
-                        width: 290px !important;
-                        justify-content: center;
-                        align-items: center;
-                           &_info{
-                               width:290px;
-                              margin: 30px auto;     
-                               & img{
-                                  width: 250px;
-                                  margin-left:20px; 
-                               }
-                               h4{
-                                    margin-left: 20px; 
-                               }
-                               p{
-                                    font-size: 12px;
-                               }
-                           } 
-                           &_button{
-                               font-size: 12px ;
-                               width: 290px;
-                               justify-content: flex-start;
-                               padding: 0;
-                               margin: 0;
-                               svg {
-                                   width: 130px;
-                                   margin-left: 20px;
-                               }
-                               span{
-                                   margin-left: 20px;
-                               }
-                           }               
-                       }
-                       @media screen and (max-width:350px){ 
-                        width: 260px !important;
-                        justify-content: center;
-                        align-items: center;
-                           &_info{
-                               width:260px;
-                              margin: 30px auto;     
-                               & img{
-                                  width: 220px;
-                                  margin-left:20px; 
-                                
-                               }
-                               h4{
-                                    margin-left: 20px; 
-                               }
-                               p{
-                                    font-size: 10px;
-
-                                   
-                               }
-                           } 
-                           &_button{
-                               font-size: 12px ;
-                               width: 260px;
-                               justify-content: flex-start;
-                               padding: 0;
-                               margin: 0;
-                               svg {
-                                   width: 120px;
-                                   margin-left: 20px;
-                               }
-                               span{
-                                   margin-left: 20px;
-                               }
-                           }               
-                       }
+            .work {
+                @include flex-column();
+                background: white;
+                text-align: left; 
+                border:1px solid #E2E6E9;
+                padding: auto;
+                transition: box-shadow 0.4s;
+                height: 100%;
+                justify-content: space-between;
+                &_info{
+                    @include flex-column();
+                    justify-content: flex-start;
+                    padding: 30px;
+                    & img{
+                        width: 100%;
                     }
+                    & h4,p{
+                        margin: 0;
+                        padding: 0;
+                    }
+                    & h4{
+                        @include font__x3(); 
+                        @include color( blue_style , 1);
+                        margin-top: 20px;
+                    }
+                    & p{
+                        @include font__x2();  
+                        @include color( blue_style , 2); 
+                        font-weight: normal;
+                        margin-top:8px; 
+                    }
+                }
+                &_button{
+                    height: 52px;
+                    padding: 0 30px; 
+                    @include flex-row();
+                    justify-content: space-between;
+                    align-items: center;
+                    border-top: 1px solid #E2E6E9;
+                    span{
+                        color: #9D6EFF;
+                    }
+                    @media screen and (max-width: 768px){
+                        svg {
+                            width: 40%;
+                        }
+                    }
+                }
+                &:hover{
+                    cursor: pointer;
+                    box-shadow: 0px 0px 40px rgba(202, 211, 217, 0.72);
                 }
             }
         }

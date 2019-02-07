@@ -56,6 +56,10 @@ gulp.task('copy-assets', function() {
     return gulp.src('./assets/*.*')
         .pipe(gulp.dest(PRODUCTION + '/assets'))
 });
+gulp.task('copy-vendor', function() {
+    return gulp.src('./vendor/*/*.*')
+        .pipe(gulp.dest(PRODUCTION + '/vendor'))
+});
 gulp.task('copy-imgs', function() {
     return gulp.src('./assets/images/*.*')
         .pipe(gulp.dest(PRODUCTION + '/assets/images'))
@@ -64,5 +68,5 @@ gulp.task('copy-fonts', function() {
     return gulp.src('./assets/fonts/*.*')
         .pipe(gulp.dest(PRODUCTION + '/assets/fonts'))
 });
-gulp.task('copy', ['copy-assets', 'copy-imgs','copy-fonts']);
+gulp.task('copy', ['copy-assets', 'copy-imgs','copy-fonts', 'copy-vendor']);
 gulp.task('default', ['copy','server' ,'watch' ]);
