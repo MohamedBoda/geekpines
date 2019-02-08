@@ -1,0 +1,26 @@
+.footer{
+    height: 84px;
+    margin: 0 auto;
+    @include background (blue_style,1);
+    @include font__x3();
+    @media screen and (max-width:1112px) {
+		padding-right:27px;
+		padding-left:27px
+    }
+    @media screen and (max-width:800px) {
+        line-height: 21px;
+        font-size: 12px;
+	}
+    .footer_container{
+         border-top: 1px solid rgba(255,255,255 ,.15); 
+       max-width: 1112px;
+         margin: 0 auto;
+         height: 100%;
+         @include flex-row();
+         justify-content: space-between;
+         align-items: center;
+         svg:first-child{
+             margin-right: 15px;
+         } 
+    }
+} 

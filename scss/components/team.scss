@@ -1,0 +1,117 @@
+.team{
+    width: 100vw;
+    height: 603px; 
+    @media screen and (max-width:450px){
+       height: fit-content;
+    }
+    @include background(blue_style,1);
+    .background{
+        background-image: url(../assets/images/team.png);
+        @include background_image();
+        .container{
+            @include container(); 
+            @include flex-column();
+            justify-content: flex-start;
+            align-items: center;
+            @include title_of_block (72px , 5 ,7); 
+            @media screen and (max-width:990px){
+            @include title_of_block (60px,5,7);  
+            } 
+            .persones{
+                width:100%;
+                height: 220px;
+                @include flex-row();
+                justify-content: space-between !important;
+                align-items: flex-end;
+                margin-top: 35px;
+                .person{
+                    width: 140px;
+                    height: 200px;
+                    @include flex-column();
+                    align-items: center;
+                    justify-content: center;                  
+                 .avtar_1,
+                 .avtar_2,
+                 .avtar_3,
+                 .avtar_4,
+                 .avtar_5,
+                 .avtar_6,
+                 .avtar_7,
+                 .avtar_8,
+                 .avtar_9{
+                        width:86px;
+                        height:86px;
+                        @media screen and (max-width:450px){
+                        width:60px; 
+                        height:60px; 
+                        }
+                        @include flex-row();
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        & img{
+                            width:66px;
+                            height:66px;
+                            @media screen and (max-width:450px){
+                                width:50px; 
+                                height:50px;
+                                }
+                            padding: 2px;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -khtml-border-radius: 50%;
+                            border-radius: 50%;
+                        }
+                        &::before{
+                            content:'';
+                            position: absolute; 
+                            top:0px;
+                            left: 0px; 
+                            width:86px;
+                            height:86px;
+                            @media screen and (max-width:450px){
+                                width:60px; 
+                                height:60px;
+                            }
+                            background-image: url(../assets/images/person_border.png);
+                            background-repeat: no-repeat;
+                            background-size: contain;                         
+                        }
+                    }
+                    &_job{
+                        & h3,h5{
+                            margin: 0; 
+                            padding: 0;
+                            @include text-center()
+                        }
+                        & h3{
+                            @include font__x2();
+                            line-height: normal;
+                            font-size: 12px;
+                            @include color (blue_style ,5);
+                            @media screen and (max-width:450px){
+                               font-size:7px
+                            }
+                        }
+                        & h5{
+                            @include font__x1();
+                            @include color (blue_style ,2);
+                            line-height: 15px;
+                            font-size: 12px;
+                            @media screen and (max-width:450px){
+                                font-size:5px
+                             }
+                        }
+                    }
+                }
+            }
+            .button{
+                @include button_style_color();
+                margin-top: 42px;
+                @media screen and (max-width:450px){
+                    margin-top:50;
+                }
+            }
+        }
+    }
+}
