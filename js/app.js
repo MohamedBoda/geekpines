@@ -351,7 +351,7 @@
         x.addEventListener("click", toggleModal10);
     })
 
-    var closeButtons = document.querySelectorAll(".close");
+    var closeButtons = document.querySelectorAll(".go-back");
     closeButtons.forEach(function(x){
         x.addEventListener("click", close); 
     })
