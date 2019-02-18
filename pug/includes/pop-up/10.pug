@@ -1,0 +1,57 @@
+.pop-up#pop-up-10
+    .pop-up_content
+        .pop-up_content_body
+            .row.my-2
+                .col
+                    .close
+                        i.material-icons close
+            .row
+                .col-lg-5.order-lg-2.mb-2
+                    img.img(src='./assets/images/work_10.png')
+                .col-lg-7.order-lg-1.mb-2
+                    .desc 
+                        .details 
+                            .details_header 
+                                h1 Steam bot для массовых рассылок
+                            .details_line  
+                            .details_link.mt-3.mb-3
+                                a(href='#') NDA protected
+                            .details_text 
+                            p
+                              | Бот для массовой рассылки приглашений в Steam группы
+                              | Веб-интерфейс для управления запуска ботами и настройки:
+                              | - целевых пользователей
+                              | - целевых групп 
+                              | - интервалов отправки сообщений
+                              | - содержимого сообщений
+                              | - симуляция "поведения" человека - отправка состояния "печатает...", рандомные задержки, приглашение
+                              | в группу после ответа целового пользователя
+                              | - поддержка двухфакторной аутентификации Steam
+                              | - API для получения статистики по приглашенным пользователям и разосланным сообщениям (и прочим целевым действиям/событиям)
+                                
+            .h-ruler
+            .row.mb-3
+                .col-12
+                    .title Фото проекта
+            .row.mb-5
+                .col-12
+                    .popup-gallery
+                        a(href='./assets/images/10_1.png' title='The Cleaner')
+                            img.photo(src='./assets/images/10_1.png') 
+
+            .h-ruler
+            .row.mb-3
+                .col-12
+                    .title Файлы проекта
+            .row.mb-5
+                .col-12 
+                    .files    
+                        a.file(href="./assets/files/Технический проект на разработку Steam-бота.docx" target="blank" rel="nofollow") Технический проект на разработку Steam-бота
+                        a.file(href="./assets/files/Установка решения STMB.docx" target="blank" rel="nofollow") Установка решения STMB
+                        a.file(href="./assets/files/SteamBot - Руководство по настройке и запуску.docx" target="blank" rel="nofollow") SteamBot - Руководство по настройке и запуску
+                        a.file(href="./assets/files/code-sample.js" target="blank" rel="nofollow") code-sample
+                        a.file(href="./assets/files/code-sample-2.js" target="blank" rel="nofollow") code-sample-2
+            .h-ruler
+            block content
+            include ./slider-pop-up   
+                    

@@ -27,7 +27,7 @@ gulp.task('sass', function () {
 gulp.task('js', function() {
     return gulp.src('js/**/*.js')
         .pipe(concat('app.js'))
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(gulp.dest(PRODUCTION + '/js'));
 });
 gulp.task('pug', function () {
@@ -60,6 +60,10 @@ gulp.task('copy-vendor', function() {
     return gulp.src('./vendor/*/*.*')
         .pipe(gulp.dest(PRODUCTION + '/vendor'))
 });
+gulp.task('copy-files', function() {
+    return gulp.src('./files/*/*.*')
+        .pipe(gulp.dest(PRODUCTION + '/files'))
+});
 gulp.task('copy-imgs', function() {
     return gulp.src('./assets/images/*.*')
         .pipe(gulp.dest(PRODUCTION + '/assets/images'))
@@ -68,5 +72,5 @@ gulp.task('copy-fonts', function() {
     return gulp.src('./assets/fonts/*.*')
         .pipe(gulp.dest(PRODUCTION + '/assets/fonts'))
 });
-gulp.task('copy', ['copy-assets', 'copy-imgs','copy-fonts', 'copy-vendor']);
+gulp.task('copy', ['copy-assets', 'copy-imgs','copy-fonts', 'copy-vendor', 'copy-files']);
 gulp.task('default', ['copy','server' ,'watch' ]);

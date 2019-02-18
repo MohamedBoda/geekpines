@@ -33,13 +33,12 @@
             }
         }
         .menu{
-           
             &_icon{
                 display: none;
             }
             &_items{
                 display: block;
-                width: 594px;
+                width: 670px;
                 & ul {
                     @include flex-row();
                     justify-content: space-between;
@@ -147,14 +146,16 @@
                 }
             }
             .photo{
-                max-width: 500px;
+                max-width: 545px;
+                padding-right: 100px;
                 & img{
                     margin-top: 40px;
+                    
                     -webkit-animation: header_phone 12s 4s infinite both;
                         animation: header_phone 12s 4s infinite both;
+
                     @media screen and (max-width:1112px) and  (min-width:931px){
-                        max-width: 100%;
-                        margin-left:90px;
+                       
                     }
                 }
             }
@@ -349,14 +350,15 @@
                     }
                 }
             }
-        }
+        } 
     }
 }
 
 
 .overlay {
-    height:calc(100vh - 85px);
-    width: 0;
+    height:100vh; 
+    width: 100%;
+    transform: translateX(-100vw);
     position: fixed; 
     z-index: 1; 
     left: 0;
@@ -364,7 +366,10 @@
     background-color: #17151d;
     overflow-x: hidden; 
     transition: 0.5s;
-    .overlay-content {
+    &-expand {
+        transform: translateX(0);
+    }
+    &-content {
         position: relative;
         top: 15%; 
         margin-right: 50px; 
@@ -404,7 +409,14 @@
                 border-radius: 3px;
                 padding-right: 45px;
                 opacity: 1;
+                margin-left: -7px;
+                padding-left: 7px;
             }
+    }
+    .logo{
+        position: absolute;
+        top:40px;
+        left: 45px;
     }
 
     .closebtn{

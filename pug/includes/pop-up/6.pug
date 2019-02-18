@@ -7,30 +7,30 @@
                         i.material-icons close
             .row
                 .col-lg-5.order-lg-2.mb-2
-                    img.img(src='./assets/images/cryptopool-1.png')
+                    img.img(src='./assets/images/work_6.png')
                 .col-lg-7.order-lg-1.mb-2
                     .desc 
                         .details 
                             .details_header 
-                                h1 Мультивалютный майнинговый пул
+                                h1 Мобильная игра "Сеня Спасатель"
                             .details_line  
                             .details_link.mt-3.mb-3
                                 a(href='#') NDA protected
                             .details_text 
                             p
-                                | • Реализация любых валют: BTC, DASH, LTC, ETH, etc.
+                                | Игра «Сеня-Спасатель» - новый элемент программы, которая 
                                 br
-                                | • Доход 103% на валютах поддерживающих merged mining
+                                | действует с 2005 года и посвящена вопросам безопасности детей и 
                                 br
-                                | • Комплексное решение для мониторинга на базе Grafana и Prometheus
+                                | правилам поведения в чрезвычайных ситуациях,
                                 br
-                                | • Микросервисная архитектура с Docker
+                                | особенно актуальных для жителей Сахалина и Камчатки.
                                 br
-                                | • Масштабирование и отказоустойчивость с Kubernetes и Rancher
+                                | Игра органично включает в себя комиксы и мультфильмы, «упаковав» 
                                 br
-                                | • Обширная статистика по пользователям
+                                | идеи, советы и рекомендации в современный вид, сочетающий в себе 
                                 br
-                                | • Интеграция с обменником
+                                | квест, мультфильмы и логическую игру.
             .h-ruler
             .row.mb-3
                 .col-12
@@ -38,18 +38,8 @@
             .row.mb-5
                 .col-12
                     .popup-gallery
-                        a(href='./assets/portfolio/images/pool_3.jpg' title='The Cleaner')
-                            img.photo(src='./assets/portfolio/images/pool_3.jpg') 
-                        a(href='./assets/portfolio/images/pool_2.jpg' title='Winter Dance')
-                            img.photo(src='./assets/portfolio/images/pool_2.jpg')
-                        a(href='./assets/portfolio/images/pool_1.jpg' title='The Uninvited Guest')
-                            img.photo(src='./assets/portfolio/images/pool_1.jpg') 
+                        a(href='./assets/images/6_1.jpg' title='The Cleaner')
+                            img.photo(src='./assets/images/6_1.jpg') 
             .h-ruler
-            .row.mb-3
-                .col-12
-                    .title Файлы проекта
-            .row.mb-5
-                .col-12
-                    .files 
-                        a.file(href="" target="blank" rel="nofollow") file name
-                        a.file(href="" target="blank" rel="nofollow") file name
+            block content
+            include ./slider-pop-up 
