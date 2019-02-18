@@ -61,8 +61,8 @@ gulp.task('copy-vendor', function() {
         .pipe(gulp.dest(PRODUCTION + '/vendor'))
 });
 gulp.task('copy-files', function() {
-    return gulp.src('./files/*/*.*')
-        .pipe(gulp.dest(PRODUCTION + '/files'))
+    return gulp.src('./assets/files/*.*')
+        .pipe(gulp.dest(PRODUCTION + '/assets/files'))
 });
 gulp.task('copy-imgs', function() {
     return gulp.src('./assets/images/*.*')
@@ -72,5 +72,5 @@ gulp.task('copy-fonts', function() {
     return gulp.src('./assets/fonts/*.*')
         .pipe(gulp.dest(PRODUCTION + '/assets/fonts'))
 });
-gulp.task('copy', ['copy-assets', 'copy-imgs','copy-fonts', 'copy-vendor', 'copy-files']);
+gulp.task('copy', ['copy-assets', 'copy-imgs','copy-fonts', 'copy-vendor', 'copy-files', 'js','sass','pug']);
 gulp.task('default', ['copy','server' ,'watch' ]);
