@@ -51,8 +51,34 @@
                      }
                 }
                 .button{
-                   @include button_style_color();
-                   margin-top:70px
+                    width: 211px;
+                    height: 47px;
+                    padding: 0;
+                    border-radius: 3px;
+                    background: linear-gradient(14.33deg, #CA40FF -1.49%, #40C8FF 118.52%);
+                    font-family: 'GoogleSans-Regular'; 
+                    font-weight: bold;
+                    font-size: unquote(get-font-size(desktop_size , 3));
+                    line-height: unquote(get-line-height(3));
+                    color: unquote(get-color(blue_style, 5));
+                    box-shadow: 0px 10px 25px rgba(143, 123, 255, 0.25);
+                    @include flex-row();
+                    justify-content: center;
+                    align-items: center;
+                    margin-top:70px;
+                    @media screen and (max-width:990px){
+                        margin-bottom: 74px
+                    }
+                
+                   & input{
+                       border: 0px;
+                       &:hover{
+                        cursor: pointer;
+                    }
+                   }
+                   &:hover{
+                       cursor: pointer;
+                   }
                 }
                 &_group{
                     display: flex;

@@ -8,22 +8,22 @@ div.contact#contact
                 p 
                     span Мы будем рады ответить на любой ваш вопрос
         div.form
-            form.form_contact(action='#')
+            form.form_contact(action="https://formspree.io/geekpines@gmail.com", method="POST")
                     div.form_contact_group
                         input#name(type='text', name='name')
                         label.label_form(for='name') Name
                     div.form_contact_group
                         input#number(type='text', name='number')
-                        label.label_form(for='number') Phone
+                        label.label_form(for='number') Phone 
                     div.form_contact_group
                         input#email(type='text', name='email')
-                        label.label_form(for='email') E-mail
+                        label.label_form(for='email') E-mail 
                     div.form_contact_group#comment
-                        textarea.text_area
+                        textarea.text_area(name="message")
                         label.label_form Комментарий 
                     div.button 
-                        span 
-                            a(href='#') Отправить 
+                        input#email(type="submit",value="Send") 
+
             div.form_photo
                 
  
